@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+:root{
+    --very-very-dark-blue: #1C2833;
+    --very-dark-blue: #212F3C;
+    --dark-blue: #283747;
+    --primary-color: #5e5ef5;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--very-very-dark-blue);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 350px;
+    height: 350px;
+}
+
+.table__cell{
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.table__cell--winner{
+    background-color: var(--primary-color);
+}
+
+.table__item{
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: transform .1s;
+}
+
+
+.table__item--x{
+    background-image: url("svg/x.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1);
+}
+
+.table__item--o{
+    background-image: url("svg/o.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1);
+}
