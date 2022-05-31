@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">Components</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle = "collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Item1</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Item2</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Item3</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Item4</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Item5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid d-flex justify-content-between">
+                <button class="navbar-toggler" type="button" data-bs-toggle = "offcanvas" data-bs-target="#navbarNav2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1 class="navbar-brand">Components</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle = "offcanvas" data-bs-target="#navbarNav3">
+                    <img src="more.svg" alt="">
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarNav2">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Offcanvas</h5>    
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Item1</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Item2</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Item3</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Item4</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Item5</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav3">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Offcanvas</h5>    
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Item1</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Item2</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Item3</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Item4</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Item5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-sm p-4">
+            <div class="row g-5">
+                <div class="col-12">
+                    <h2 class="display-4">Accordion</h2>
+                    <hr>
+                    <div class="accordion" id="accordion1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora quos, possimus itaque voluptas minus? Itaque illum nihil aperiam ex.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora quos, possimus itaque voluptas minus? Itaque illum nihil aperiam ex.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora quos, possimus itaque voluptas minus? Itaque illum nihil aperiam ex.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h2 class="display-4">Buttons</h2>
+                    <hr>
+                        <div class="row row-cols-1 row-cols-sm-4 row-cols-md-6 g-2">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary w-100">Primary</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary w-100">Secondary</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-success w-100">Success</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-danger w-100">Danger</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-warning w-100">Warning</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-info w-100">Info</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-light w-100">Light</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-dark w-100">Dark</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-link w-100">Link</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-12">
+                    <h2 class="display-4">Cards</h2>
+                    <hr>
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-4">
+                            <div class="card">
+                                <img src="img1.jpg" alt="" class="card-img-top">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Card Title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing Lorem, ipsum</p>
+                                </div>
+                                <ul class="list-group list-group-flush px-2">
+                                    <li class="list-group-item">Item #1</li>
+                                </ul>
+                                <div class="card-body px-4 py-3">
+                                    <a href="#" class="card-link">Link #1</a>
+                                    <a href="#" class="card-link">Link #2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card">
+                                <img src="img1.jpg" alt="" class="card-img-top">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Card Title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing Lorem, ipsum</p>
+                                </div>
+                                <ul class="list-group list-group-flush px-2">
+                                    <li class="list-group-item">Item #1</li>
+                                </ul>
+                                <div class="card-body px-4 py-3">
+                                    <a href="#" class="card-link">Link #1</a>
+                                    <a href="#" class="card-link">Link #2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card">
+                                <img src="img1.jpg" alt="" class="card-img-top">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Card Title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing Lorem, ipsum</p>
+                                </div>
+                                <ul class="list-group list-group-flush px-2">
+                                    <li class="list-group-item">Item #1</li>
+                                </ul>
+                                <div class="card-body px-4 py-3">
+                                    <a href="#" class="card-link">Link #1</a>
+                                    <a href="#" class="card-link">Link #2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h2 class="display-6 text-center">Card Group</h2>
+                            <hr>
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="img1.jpg" alt="" class="card-img-top">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title">Card Title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing Lorem, ipsum</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush px-2">
+                                        <li class="list-group-item">Item #1</li>
+                                    </ul>
+                                    <div class="card-body px-4 py-3">
+                                        <a href="#" class="card-link">Link #1</a>
+                                        <a href="#" class="card-link">Link #2</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="img1.jpg" alt="" class="card-img-top">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title">Card Title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing Lorem, ipsum</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush px-2">
+                                        <li class="list-group-item">Item #1</li>
+                                    </ul>
+                                    <div class="card-body px-4 py-3">
+                                        <a href="#" class="card-link">Link #1</a>
+                                        <a href="#" class="card-link">Link #2</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="img1.jpg" alt="" class="card-img-top">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title">Card Title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing Lorem, ipsum</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush px-2">
+                                        <li class="list-group-item">Item #1</li>
+                                    </ul>
+                                    <div class="card-body px-4 py-3">
+                                        <a href="#" class="card-link">Link #1</a>
+                                        <a href="#" class="card-link">Link #2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h2 class="display-4">Modals</h2>
+                    <hr>
+                    <div class="row g-2">
+                        <div class="col-12 col-sm-4">
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Launch demo modal
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                                Launch demo modal scroll 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" id="exampleModal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, reprehenderit sapiente. Reiciendis?
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="exampleModal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, reprehenderit sapiente. Reiciendis?
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis, at esse asperiores dolores eligendi fugiat eos eum sequi totam voluptatum autem nemo, exercitationem voluptates.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, reprehenderit sapiente. Reiciendis?
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis, at esse asperiores dolores eligendi fugiat eos eum sequi totam voluptatum autem nemo, exercitationem voluptates.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, reprehenderit sapiente. Reiciendis?
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis, at esse asperiores dolores eligendi fugiat eos eum sequi totam voluptatum autem nemo, exercitationem voluptates.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, reprehenderit sapiente. Reiciendis?
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis, at esse asperiores dolores eligendi fugiat eos eum sequi totam voluptatum autem nemo, exercitationem voluptates.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, reprehenderit sapiente. Reiciendis?
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis, at esse asperiores dolores eligendi fugiat eos eum sequi totam voluptatum autem nemo, exercitationem voluptates.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, reprehenderit sapiente. Reiciendis?
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis, at esse asperiores dolores eligendi fugiat eos eum sequi totam voluptatum autem nemo, exercitationem voluptates.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, reprehenderit sapiente. Reiciendis?
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis, at esse asperiores dolores eligendi fugiat eos eum sequi totam voluptatum autem nemo, exercitationem voluptates.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h2 class="display-4">Forms</h2>
+                    <hr>
+                    <div class="row justify-content-center g-4">
+                        <div class="col-12 col-sm-4">
+                            <div class="card p-1">
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="mb-3">
+                                            <label for="input1" class="form-label">Input #1</label>
+                                            <input type="text" class="form-control" id="input1">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="input1" class="form-label">Input #1</label>
+                                            <input type="text" class="form-control" id="input1">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="input1" class="form-label">Input #1</label>
+                                            <input type="text" class="form-control" id="input1">
+                                        </div>
+                                        <div class="mt-4">
+                                            <button type="submit" class="btn btn-primary w-100">Button form</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="card px-1 py-2">
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="inputf1" placeholder="input1">
+                                            <label for="inputf1" class="form-label">Input #1</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="inputf2" placeholder="input1">
+                                            <label for="inputf2" class="form-label">Input #1</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="inputf3" placeholder="input1">
+                                            <label for="inputf3" class="form-label">Input #1</label>
+                                        </div>
+                                        <div class="mt-4">
+                                            <button type="submit" class="btn btn-primary w-100">Button form</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="card py-3 px-1">
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="mb-3 row">
+                                            <label for="inputr3" class="col-12 col-sm-2 col-form-label">Input #1</label>
+                                            <div class=" col-12 col-sm-10">
+                                                <input type="text" class="form-control" id="inputr3" placeholder="input1">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="inputr3" class="col-12 col-sm-2 col-form-label">Input #1</label>
+                                            <div class="col-12 col-sm-10">
+                                                <input type="text" class="form-control" id="inputr3" placeholder="input1">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="inputr3" class="col-12 col-sm-2 col-form-label">Input #1</label>
+                                            <div class="col-12 col-sm-10">
+                                                <input type="text" class="form-control" id="inputr3" placeholder="input1">
+                                            </div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <button type="submit" class="btn btn-primary w-100">Button form</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

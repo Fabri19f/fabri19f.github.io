@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="teal lighten-2">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Sass</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul id="mobile-demo" class="sidenav">
+        <li><a href="#">Sass</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ul>
+    <main>
+        <div class="container section">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="collection" style="margin-top: 0;">
+                        <a href="#" class="collection-item"><span class="badge">1</span>Alan</a>
+                        <a href="#" class="collection-item"><span class="new badge">4</span>Alan</a>
+                        <a href="#" class="collection-item"><span class="badge">12</span>Alan</a>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <ul id="dropdown2" class="dropdown-content">
+                        <li><a href="#!">one<span class="badge">1</span></a></li>
+                        <li><a href="#!">two<span class="new badge">1</span></a></li>
+                        <li><a href="#!">three</a></li>
+                    </ul>
+                    <a class="btn dropdown-trigger" href="#!" data-target="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+                </div>
+                <div class="col s12">
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">filter_drama</i>First<span class="new badge">4</span>
+                            </div>
+                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">place</i>Second<span class="badge">1</span>
+                            </div>
+                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <a href="#" class="btn">button</a>
+                    <a href="#" class="waves-effect btn"><i class="material-icons left">cloud</i>button</a>
+                    <a href="#" class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">
+                        Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <a href="#" class="waves-effect waves-light btn btn-small">small</a>
+                    <a href="#" class="waves-effect waves-light btn">normal</a>
+                    <a href="#" class="waves-effect waves-light btn btn-large">large</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card red lighten-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Card Title</span>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat maiores voluptate illum necessitatibus magnam, similique perferendis delectus mollitia, quos ab quasi deleniti voluptas autem praesentium. Lorem ipsum.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img-card.jpg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Link 1</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                          <img src="img-card.jpg">
+                          <span class="card-title">Card Title</span>
+                          <a class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut commodi doloremque ad in, quo, vitae necessitatibus placeat iste quaerat nemo praesentium! Cum accusantium modi ipsa?</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card-panel teal white-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vitae distinctio eos deserunt eius voluptatem numquam minus quasi quod ab quam iste iusto asperiores, voluptatibus quo repellat tempora reprehenderit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ullam eveniet tempore?</p>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="img-card.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-tabs">
+                          <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a href="#test4">Test 1</a></li>
+                            <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+                            <li class="tab"><a href="#test6">Test 3</a></li>
+                          </ul>
+                        </div>
+                        <div class="card-content grey lighten-4">
+                          <div id="test4">Test 1</div>
+                          <div id="test5">Test 2</div>
+                          <div id="test6">Test 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            M.AutoInit();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
