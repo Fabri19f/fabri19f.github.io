@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<main>
+    <div class="game-info">
+        <div class="game-info-item">
+            <span>x<span style="color: #5e5ef5;">o</span></span>
+        </div>
+        <div class="game-info-item">
+            <p><span id="turn-icon"></span>turn</p>
+        </div>
+        <div class="game-info-item" id="reset-icon">
+            
+        </div>
+    </div>
     <div class="table">
         <div class="table-cell"></div>
         <div class="table-cell"></div>
@@ -19,6 +31,21 @@
         <div class="table-cell"></div>
         <div class="table-cell"></div>
     </div>
+    <div class="score-info">
+        <div class="score-item">
+            <p>×</p>
+            <span id="score-x">1</span>
+        </div>
+        <div class="score-item">
+            <p>ties</p>
+            <span id="score-ties">3</span>
+        </div>
+        <div class="score-item">
+            <p>o</p>
+            <span id="score-o">2</span>
+        </div>
+    </div>
+</main>
     <script src="main.js"></script>
 </body>
 </html>
