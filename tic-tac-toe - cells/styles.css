@@ -37,23 +37,30 @@ body{
     color: #fff;
     font-weight: 400;
     font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
 }
 
 .o::after{
-    content: 'o'; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+    content: 'o';
     color: #5e5ef5;
-    animation-name: changeSize;
-    animation-duration: .2s;
+    animation: changeSize .12s, changeBg 1s, changeBorder .3s;
 }
 
 .x::after{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
     content: '×';
-    animation-name: changeSize;
-    animation-duration: .2s;
+    animation: changeSize .12s, changeBg 1s, changeBorder .3s;
 }
 
 @keyframes changeSize {
@@ -64,6 +71,25 @@ body{
         transform: scale(1);
     }
 }
+
+@keyframes changeBg {
+    from{
+        background-color: #5e5ef5;
+    }
+    to{
+        background-color: #00000000;
+    }
+}
+
+@keyframes changeBorder {
+    from{
+        border-radius: 50%;
+    }
+    to{
+        border-radius: 10px;
+    }
+}
+
 
 @media screen and (min-width: 375px) {
     .table{
