@@ -75,6 +75,7 @@ body{
 @keyframes changeBg {
     from{
         background-color: #5e5ef5;
+        color: #fff;
     }
     to{
         background-color: #00000000;
@@ -84,9 +85,6 @@ body{
 @keyframes changeBorder {
     from{
         border-radius: 50%;
-    }
-    to{
-        border-radius: 10px;
     }
 }
 
