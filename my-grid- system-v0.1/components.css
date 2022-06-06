@@ -40,6 +40,10 @@
     left: 0;
 }
 
+.lock-scroll-body{
+    overflow-y: hidden;
+}
+
 .navbar-btn{
     all: unset;
     width: 32px;
