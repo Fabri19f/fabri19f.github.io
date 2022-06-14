@@ -1,0 +1,82 @@
+.navbar{
+    width: 100%;
+    padding: 14px 12px;
+    background-color: var(--violet);
+    color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand{
+    color: #fff;
+    font-weight: 400;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 16px;
+}
+
+.offcanvas{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 350px;
+    padding: 16px;
+    flex-direction: column;
+    background-color: #fff;
+    transition: left .4s;
+}
+
+.navbar-show{
+    left: 0;
+}
+
+.lock-scroll-body{
+    overflow-y: hidden;
+}
+
+.navbar-menu a{
+    color: #000;
+    text-decoration: none;
+}
+
+#navbar-toggler{
+    all: unset;
+    width: 32px;
+    height: 32px;
+    background-image: url("menu.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    .expand-md .offcanvas, .offcanvas-end{
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        padding: 0;
+    }
+    .lock-scroll-body{
+        overflow-y: auto;
+    }
+    #navbar-toggler{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
