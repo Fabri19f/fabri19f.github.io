@@ -1,0 +1,43 @@
+[
+  {
+    "type": "planet",
+    "index": 0,
+    "title": "El inicio de todo",
+    "photo": "./photos/foto1.webp",
+    "description": "Desde que apareciste, algo bonito empezó a moverse en mi universo. Este planeta guarda el primer recuerdo de este viaje."
+  },
+  {
+    "type": "planet",
+    "index": 1,
+    "title": "Tu sonrisa",
+    "photo": "./photos/foto2.webp",
+    "description": "Hay sonrisas que iluminan un día, pero la tuya parece iluminar galaxias enteras."
+  },
+  {
+    "type": "planet",
+    "index": 2,
+    "title": "Nuestros momentos",
+    "photo": "./photos/foto3.webp",
+    "description": "Cada momento contigo se siente como una pequeña estrella que quiero guardar para siempre."
+  },
+  {
+    "type": "planet",
+    "index": 3,
+    "title": "Lo que siento",
+    "photo": "./photos/foto4.webp",
+    "description": "No sé exactamente cuándo pasó, pero en algún punto dejaste de ser alguien más y empezaste a ser alguien especial."
+  },
+  {
+    "type": "planet",
+    "index": 4,
+    "title": "La razón de este viaje",
+    "photo": "./photos/foto5.webp",
+    "description": "Todo este recorrido existe porque quería encontrar una forma distinta de decirte lo que siento."
+  },
+  {
+    "type": "sun",
+    "title": "La estrella final",
+    "photo": "./photos/foto6.webp",
+    "description": "Después de recorrer este pequeño universo, solo queda una pregunta importante..."
+  }
+]

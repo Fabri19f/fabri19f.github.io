@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Solar del Amor</title>
+    <script type="module" crossorigin src="./assets/index.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index.css">
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <section class="hud">
+      <h1>Sistema Solar del Amor</h1>
+      <p>Visita los planetas en orden hasta llegar a la estrella final ✨</p>
+
+      <div id="journeyProgress" class="journey-progress"></div>
+      <p id="journeyHint" class="journey-hint"></p>
+    </section>
+
+    <div id="hoverLabel" class="label"></div>
+
+    <div id="memoryModal" class="modal-overlay hidden">
+      <article class="memory-card">
+        <button id="modalClose" class="modal-close" type="button" aria-label="Cerrar modal">×</button>
+
+        <p id="modalKicker" class="modal-kicker"></p>
+        <h2 id="modalTitle" class="modal-title"></h2>
+
+        <div class="modal-photo-wrap">
+          <img id="modalPhoto" class="modal-photo" src="" alt="" />
+        </div>
+
+        <p id="modalDescription" class="modal-description"></p>
+
+        <div id="proposalBlock" class="proposal-block hidden">
+          <h3>¿Quieres ser mi novia? 💖</h3>
+
+          <div id="proposalActions" class="proposal-actions">
+            <button id="yesButton" class="proposal-btn yes" type="button">
+              Sí 💘
+            </button>
+
+            <button id="noButton" class="proposal-btn no" type="button">
+              No
+            </button>
+          </div>
+        </div>
+
+        <button id="continueButton" class="continue-btn" type="button">
+          Continuar viaje ✨
+        </button>
+      </article>
+    </div>
+
+  </body>
+</html>
